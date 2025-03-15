@@ -12,4 +12,6 @@
 8. Again we do "dvc add data/" (creates data.dvc file and makes some changes in .gitignore file) then asks us to do this "git add .gitignore data.dvc"
 
 Note :- Whenever we track a data in dvc and maintain its version, the dvc will provide an ID corresponding to that data which you can use to    track using git. And this ID is found in data.dvc file. Also, you can see that inside a folder ".dvc" you will have two folders "10" which contains the ID details and "f0" which contains the copy of the data. So, whenever you track a data using dvc, there always be two folders, the first one containing ID and the second one containing the data.
-9. Now - "dvc commit" and then "dvc push"
+9. Now - "dvc commit" and then "dvc push" 
+(After commit and push, we can see that the data has been stored in S3 folder) (You can see that two folders are created here, folder1 contains ID and folder2 contains the data).
+10. Do a git add-commit-push to mark this stage as first version of data.
